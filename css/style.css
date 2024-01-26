@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('TTLakes-Regular.eot');
+    src: url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Regular.woff') format('woff'),
+    url('/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    } 
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('TTLakes-Bold.eot');
+    src: url('/fonts/TTLakes-Bold.eot') format('embedded-opentype'),
+    url('/fonts/TTLakes-Bold.woff') format('woff'),
+    url('/fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: TT Lakes Regular;
+}
+.wrapper {
+    min-width: 320px;
+    max-width: 1068px;
+    margin: 0 auto;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #ff3e79;
+    border-radius: 20px;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header__nav {
+    padding: 18px;
+}
+.header__item:nth-child(2) {
+    margin-right: auto;
+}
+/* .header__item:nth-child(6)::before { */
+.request::before   {
+    display:inline-block;
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: #a9a9a987;
+    border-radius: 1px;
+    position: relative;
+    top: 2px;
+    left: -35px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.header__item:nth-child(3),
+.header__item:nth-child(4),
+.header__item:nth-child(5) {
+    display: none;
+}
+.header__item:nth-child(1)::after {
+    display: none;
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: #a9a9a987;
+    border-radius: 1px;
+    position: relative;
+    top: -2px;
+    left: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (min-width: 515px) {
+    .header__item:nth-child(3),
+    .header__item:nth-child(4),
+    .header__item:nth-child(5) {
+        display: block;
+}
+    .request::before {
+        margin-left: 20px;
+        margin-right: 20px;
+        left: -46px;
+    }
+
+    .header__item:nth-child(5) {
+        margin-right: 13px;
+    }
+
+    .header__item:nth-child(6) {
+        margin-left: 13px;
+    }
+
+    .header__item:nth-child(1)::after {
+        display: inline-block;
+    }
+}
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+}
+.main-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 12px;
+    /* Услуги и сервисы */
+/* font-family: 'TT Lakes Medium'; */
+font-weight: 700;
+font-size: 28px;
+line-height: 40px;
+/* identical to box height, or 143% */
+letter-spacing: -0.6px;
+
+}
+.main-title::before {
+    display: inline-block;
+    position: relative;
+    content: " ";
+    width: 4px;
+    height: 40px;
+    background-color: #c02f5b;
+    border-radius: 14px;
+    top: 0;
+    left: -12px;
+}
+.burger,
+.call,
+.chat,
+.profile,
+.request,
+.check {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.burger {
+    background-image: url(/img/burger.svg);
+}
+
+.call {
+    background-image: url(/img/call.svg);
+}
+
+.chat {
+    background-image: url(/img/chat.svg);
+}
+
+.profile {  
+    background-image: url(/img/profile.svg);
+}
+
+.request {
+    background-image: url(/img/request.svg);
+}
+.check {
+    background-image: url(/img/check.svg);
+}
+
+.title__h1 {
+    font-family: TT Lakes Bold;
+}
