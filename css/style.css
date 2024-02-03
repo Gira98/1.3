@@ -119,6 +119,20 @@ html {
 .p1 {
     margin-top: 0;
 }
+.title-wrapper {
+    position: relative;
+}
+.title-wrapper::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color:#41F6D7;
+    border-radius: 14px;
+    top: -5px;
+    left: 0px;
+}
 
 @media (min-width: 768px) {
     .header__item:nth-child(3),
@@ -140,6 +154,7 @@ html {
 
     .p2 {
         display: block;
+        margin-bottom: 16px;
     }
     .content {
         display: flex;
@@ -159,6 +174,7 @@ html {
     .content__img img {
         border-radius: 2%;
     }
+    .title-wrapper::before
 
     
 }
@@ -172,8 +188,15 @@ html {
     .title__h1 {
         margin-bottom: 10px;
     }
+    .p2 {
+        margin-bottom: 0;
+    }
     .p3 {
         display: block;
+        margin-bottom: 16px;
+    }
+    .title-wrapper::before {
+        top: 9px;
     }
 }
 
@@ -186,17 +209,6 @@ html {
     justify-content: space-between;
 }
 
-.title__h1::before {
-    display: inline-block;
-    position: relative;
-    content: "";
-    width: 4px;
-    height: 40px;
-    background-color:#41F6D7;
-    border-radius: 14px;
-    top: 9px;
-    left: -12px;
-}
 
 .title__list, .nav__list {
     list-style-type: none;
