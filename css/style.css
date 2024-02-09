@@ -276,3 +276,99 @@ button {
     height: 24px;
 }
 
+
+
+.sidebar {
+    font-family: TT Lakes Medium;
+    max-width: 320px;
+    height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 14px 0px 60px 0px gainsboro;
+    
+}
+.sidebar-header__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 24px;
+    justify-content: space-between;
+}
+.sidebar-header__navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.sidebar-main__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 18px;
+    padding: 0;
+}
+.sidebar-main__item {
+    padding: 0 24px;
+    position: relative;
+}
+.sidebar-main__item:hover::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 30px;
+    background-color:#41F6D7;
+    border-radius: 20px;
+    top: 0px;
+    left: -2px;
+}
+.sidebar-main__link {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+    padding: 7px 10px;
+}
+.footer {
+    padding-left: 24px;
+    
+}
+.sidebar-footer__list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+.sidebar-footer__link {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+}
+.email {
+    margin-bottom: 20px;
+}
+.tel {
+    font-family: TT Lakes Bold;
+    font-size: 24px;
+}
+.lang {
+    list-style-type: none;
+    display: flex;
+    gap: 7px;
+    padding: 0;
+}
+.sidebar-main__link:hover,
+.lang__button:hover,
+.sidebar-footer__link:hover {
+    color: #7E7E82;
+}
+.sidebar-header__item:hover,
+.sidebar-footer__item:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+.ru {
+    color: #7E7E82;
+}
